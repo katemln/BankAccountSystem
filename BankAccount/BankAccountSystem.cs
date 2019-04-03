@@ -22,9 +22,9 @@ namespace BankAccount
                 }
                 else if (customerChoice == "Yes" || customerChoice == "YES" || customerChoice == "yes")
                 {
-                    Console.WriteLine("Please give me your first name:");
+                    Console.WriteLine("Please enter your first name:");
                     var firstName = Console.ReadLine();
-                    Console.WriteLine("Please give me your last name:");
+                    Console.WriteLine("Please enter your last name:");
                     var lastName = Console.ReadLine();
                     Console.WriteLine("Please enter your account type to proceed (savings, credit, lottery):");
                     var accountType = Console.ReadLine();
