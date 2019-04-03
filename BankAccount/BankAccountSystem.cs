@@ -86,7 +86,7 @@ namespace BankAccount
                 {
                     account.PrintStatementTransaction();
                 }
-                else if (action == "addinterent")
+                else if (action == "addinterest")
                 {
                     account.AddInterest();
                 }

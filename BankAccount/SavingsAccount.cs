@@ -42,7 +42,11 @@ namespace BankAccount
 
         public void AddInterest()
         {
-            Console.WriteLine("Added interest");
+            var interest = this.balance * this.interestRate;
+            this.balance += interest;
+            Record record = new Record("INTEREST", interest, this.balance);
+            this.ledger.Add(record);
+            Console.WriteLine("Balance: " + this.balance);
         }
     }
 }

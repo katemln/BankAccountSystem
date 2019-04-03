@@ -22,9 +22,9 @@ namespace BankAccount
 
         public void PrintStatementTransaction()
         {
-            Console.WriteLine("IBAN" + this.iban);
-            Console.WriteLine("Name:" + this.firstName + " " + this.lastName);
-            Console.WriteLine("Type:" + this.accountType);
+            Console.WriteLine("IBAN: " + this.iban);
+            Console.WriteLine("Name: " + this.firstName + " " + this.lastName);
+            Console.WriteLine("Type: " + this.accountType);
             Console.WriteLine("       DATE         |   REASON    |   AMOUNT   |   BALANCE   ");
             Console.WriteLine("--------------------|-------------|------------|-------------");
             foreach (var record in this.ledger)

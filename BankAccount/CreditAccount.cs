@@ -49,7 +49,11 @@ namespace BankAccount
 
         public void AddPayment(decimal amount)
         {
-            Console.WriteLine("Adding payment of " + amount);
+            var interest = (-1) * this.balance * this.interestRate;
+            this.balance += interest;
+            Record record = new Record("PAYMENT", interest, this.balance);
+            this.ledger.Add(record);
+            Console.WriteLine("Balance: " + this.balance);
         }
 
     }
